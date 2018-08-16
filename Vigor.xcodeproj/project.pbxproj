@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C02F3EDE6E1877AE5F1F8074 /* Pods_Vigor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE54DDF97AC40040B7C7BED /* Pods_Vigor.framework */; };
+		D30A364620E6DB090035BA75 /* CustomWorkoutMakerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A364520E6DB090035BA75 /* CustomWorkoutMakerTableViewController.swift */; };
+		D319291420F2FCF900A9DA07 /* standingYoga.html in Resources */ = {isa = PBXBuildFile; fileRef = D319291320F2FCF900A9DA07 /* standingYoga.html */; };
+		D319291620F2FCFE00A9DA07 /* twistYoga.html in Resources */ = {isa = PBXBuildFile; fileRef = D319291520F2FCFE00A9DA07 /* twistYoga.html */; };
+		D3513C1C20E2EA840060C26E /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3513C1B20E2EA840060C26E /* ImageViewCell.swift */; };
+		D3513C2C20E31FD30060C26E /* BodyPartWorkoutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3513C2B20E31FD30060C26E /* BodyPartWorkoutsTableViewController.swift */; };
+		D3513C2E20E320660060C26E /* ExerciseDetailImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3513C2D20E320660060C26E /* ExerciseDetailImageViewController.swift */; };
+		D3513C3020E321AB0060C26E /* BodyPartExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3513C2F20E321AB0060C26E /* BodyPartExerciseTableViewController.swift */; };
+		D3513C3220E322330060C26E /* BodyPartExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3513C3120E322330060C26E /* BodyPartExercisesTableViewController.swift */; };
+		D3743CF320DB411900415DB7 /* TodayExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3743CF220DB411900415DB7 /* TodayExercisesTableViewController.swift */; };
+		D3743CF720DB487600415DB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3743CF620DB487600415DB7 /* Images.xcassets */; };
+		D381681E20D9CEFF00A0656F /* BodyPartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381681D20D9CEFF00A0656F /* BodyPartsTableViewController.swift */; };
+		D391474720EBF26000710C90 /* forearms.html in Resources */ = {isa = PBXBuildFile; fileRef = D391474620EBF26000710C90 /* forearms.html */; };
+		D391474920EBF2D500710C90 /* triceps.html in Resources */ = {isa = PBXBuildFile; fileRef = D391474820EBF2D500710C90 /* triceps.html */; };
+		D391474B20EBF31200710C90 /* biceps.html in Resources */ = {isa = PBXBuildFile; fileRef = D391474A20EBF31200710C90 /* biceps.html */; };
+		D391474D20EBF39700710C90 /* lats.html in Resources */ = {isa = PBXBuildFile; fileRef = D391474C20EBF39700710C90 /* lats.html */; };
+		D391474F20EBF40E00710C90 /* middleback.html in Resources */ = {isa = PBXBuildFile; fileRef = D391474E20EBF40D00710C90 /* middleback.html */; };
+		D391475120EBF4A000710C90 /* lowerback.html in Resources */ = {isa = PBXBuildFile; fileRef = D391475020EBF4A000710C90 /* lowerback.html */; };
+		D391475920EBF64300710C90 /* traps.html in Resources */ = {isa = PBXBuildFile; fileRef = D391475820EBF64300710C90 /* traps.html */; };
+		D391475B20EBF69900710C90 /* shoulders.html in Resources */ = {isa = PBXBuildFile; fileRef = D391475A20EBF69900710C90 /* shoulders.html */; };
+		D391475D20EBF6E800710C90 /* core.html in Resources */ = {isa = PBXBuildFile; fileRef = D391475C20EBF6E800710C90 /* core.html */; };
+		D391476520EBFA4200710C90 /* CustomWorkoutsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391476220EBFA4200710C90 /* CustomWorkoutsSetup.swift */; };
+		D391476620EBFA4200710C90 /* SaveCustomWorkoutToToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391476320EBFA4200710C90 /* SaveCustomWorkoutToToday.swift */; };
+		D3923A2520E02F7700EBB422 /* DefaultWorkoutsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3923A2420E02F7700EBB422 /* DefaultWorkoutsSetup.swift */; };
+		D3923A2720E0452F00EBB422 /* BodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3923A2620E0452F00EBB422 /* BodyPart.swift */; };
+		D39EA8C320ED36D500ED229E /* quadriceps.html in Resources */ = {isa = PBXBuildFile; fileRef = D39EA8BF20ED36D500ED229E /* quadriceps.html */; };
+		D39EA8C420ED36D500ED229E /* glutes.html in Resources */ = {isa = PBXBuildFile; fileRef = D39EA8C020ED36D500ED229E /* glutes.html */; };
+		D39EA8C520ED36D500ED229E /* calves.html in Resources */ = {isa = PBXBuildFile; fileRef = D39EA8C120ED36D500ED229E /* calves.html */; };
+		D39EA8C620ED36D500ED229E /* hamstrings.html in Resources */ = {isa = PBXBuildFile; fileRef = D39EA8C220ED36D500ED229E /* hamstrings.html */; };
+		D39FEED220DC7B4700C73D46 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FEED120DC7B4700C73D46 /* AppTabBarController.swift */; };
+		D39FEED720DC835A00C73D46 /* TodayExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FEED620DC835A00C73D46 /* TodayExerciseTableViewController.swift */; };
+		D39FEEDD20DD802400C73D46 /* AddWorkoutToToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FEEDC20DD802400C73D46 /* AddWorkoutToToday.swift */; };
+		D39FEEE320DDB6DD00C73D46 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FEEE220DDB6DD00C73D46 /* CalendarTableViewController.swift */; };
+		D39FEEE520DDB73A00C73D46 /* CalendarWorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FEEE420DDB73A00C73D46 /* CalendarWorkoutTableViewController.swift */; };
+		D39FEEE920DDD6D900C73D46 /* CalendarWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FEEE820DDD6D900C73D46 /* CalendarWorkout.swift */; };
+		D3A340C320F2F64D00BAAD48 /* coreYoga.html in Resources */ = {isa = PBXBuildFile; fileRef = D3A340C220F2F64D00BAAD48 /* coreYoga.html */; };
+		D3A340C620F2FB7D00BAAD48 /* seatedYoga.html in Resources */ = {isa = PBXBuildFile; fileRef = D3A340C520F2FB7D00BAAD48 /* seatedYoga.html */; };
+		D3B6342620D94E65007A3FA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6342520D94E65007A3FA2 /* AppDelegate.swift */; };
+		D3B6342B20D94E65007A3FA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B6342920D94E65007A3FA2 /* Main.storyboard */; };
+		D3B6343020D94E66007A3FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B6342E20D94E66007A3FA2 /* LaunchScreen.storyboard */; };
+		D3BDEF4920EFCB470054068C /* CustomSelectedExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDEF4820EFCB470054068C /* CustomSelectedExercisesTableViewController.swift */; };
+		D3BDEF4C20EFD3820054068C /* CustomSelectedExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDEF4B20EFD3820054068C /* CustomSelectedExerciseTableViewController.swift */; };
+		D3BDEF4E20EFE8030054068C /* TodayWorkoutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDEF4D20EFE8030054068C /* TodayWorkoutsTableViewController.swift */; };
+		D3C95EC020ED791800A58C0B /* plyometrics.html in Resources */ = {isa = PBXBuildFile; fileRef = D3C95EBF20ED791800A58C0B /* plyometrics.html */; };
+		D3C95EC620EDA26F00A58C0B /* stretches.html in Resources */ = {isa = PBXBuildFile; fileRef = D3C95EC520EDA26F00A58C0B /* stretches.html */; };
+		D3C95ECC20EE772800A58C0B /* CustomSelectExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C95ECB20EE772800A58C0B /* CustomSelectExercisesTableViewController.swift */; };
+		D3C95ECE20EE773600A58C0B /* CustomSelectExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C95ECD20EE773600A58C0B /* CustomSelectExerciseTableViewController.swift */; };
+		D3C9B6A720EAC3F6008DE90D /* chest.html in Resources */ = {isa = PBXBuildFile; fileRef = D3C9B6A620EAC3F6008DE90D /* chest.html */; };
+		D3CEE96520E474510022934B /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEE96420E474510022934B /* SettingsTableViewController.swift */; };
+		D3CFE20720D9695A0056BA99 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CFE20620D9695A0056BA99 /* Exercise.swift */; };
+		D3CFE20920D96C1F0056BA99 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CFE20820D96C1F0056BA99 /* Workout.swift */; };
+		D3F5A91020F00C23002CCB9D /* AddTodayWorkoutToCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5A90F20F00C23002CCB9D /* AddTodayWorkoutToCalendar.swift */; };
+		D3F5A91220F02F1E002CCB9D /* armsDefaults.html in Resources */ = {isa = PBXBuildFile; fileRef = D3F5A91120F02F1D002CCB9D /* armsDefaults.html */; };
+		D3F5A91920F04CC8002CCB9D /* coreDefaults.html in Resources */ = {isa = PBXBuildFile; fileRef = D3F5A91420F04CC8002CCB9D /* coreDefaults.html */; };
+		D3F5A91A20F04CC8002CCB9D /* shouldersDefaults.html in Resources */ = {isa = PBXBuildFile; fileRef = D3F5A91520F04CC8002CCB9D /* shouldersDefaults.html */; };
+		D3F5A91B20F04CC8002CCB9D /* chestDefaults.html in Resources */ = {isa = PBXBuildFile; fileRef = D3F5A91620F04CC8002CCB9D /* chestDefaults.html */; };
+		D3F5A91C20F04CC8002CCB9D /* legsDefaults.html in Resources */ = {isa = PBXBuildFile; fileRef = D3F5A91720F04CC8002CCB9D /* legsDefaults.html */; };
+		D3F5A91D20F04CC8002CCB9D /* backDefaults.html in Resources */ = {isa = PBXBuildFile; fileRef = D3F5A91820F04CC8002CCB9D /* backDefaults.html */; };
+		D3F5A92320F1A29F002CCB9D /* plyDefaults.html in Resources */ = {isa = PBXBuildFile; fileRef = D3F5A92220F1A29E002CCB9D /* plyDefaults.html */; };
+		D3FA0E8620E2ABCB00AAE60D /* TodayHelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA0E8520E2ABCB00AAE60D /* TodayHelperFunctions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5937C13B8E2B5B580852921E /* Pods-Vigor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vigor/Pods-Vigor.debug.xcconfig"; sourceTree = "<group>"; };
+		9EE54DDF97AC40040B7C7BED /* Pods_Vigor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D9FEF60A0A06763B43B398 /* Pods-Vigor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vigor/Pods-Vigor.release.xcconfig"; sourceTree = "<group>"; };
+		D30A364520E6DB090035BA75 /* CustomWorkoutMakerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWorkoutMakerTableViewController.swift; sourceTree = "<group>"; };
+		D319291320F2FCF900A9DA07 /* standingYoga.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = standingYoga.html; sourceTree = "<group>"; };
+		D319291520F2FCFE00A9DA07 /* twistYoga.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = twistYoga.html; sourceTree = "<group>"; };
+		D3513C1B20E2EA840060C26E /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		D3513C2B20E31FD30060C26E /* BodyPartWorkoutsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartWorkoutsTableViewController.swift; sourceTree = "<group>"; };
+		D3513C2D20E320660060C26E /* ExerciseDetailImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailImageViewController.swift; sourceTree = "<group>"; };
+		D3513C2F20E321AB0060C26E /* BodyPartExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartExerciseTableViewController.swift; sourceTree = "<group>"; };
+		D3513C3120E322330060C26E /* BodyPartExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartExercisesTableViewController.swift; sourceTree = "<group>"; };
+		D3743CF220DB411900415DB7 /* TodayExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayExercisesTableViewController.swift; sourceTree = "<group>"; };
+		D3743CF620DB487600415DB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D381681D20D9CEFF00A0656F /* BodyPartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartsTableViewController.swift; sourceTree = "<group>"; };
+		D391474620EBF26000710C90 /* forearms.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = forearms.html; sourceTree = "<group>"; };
+		D391474820EBF2D500710C90 /* triceps.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = triceps.html; sourceTree = "<group>"; };
+		D391474A20EBF31200710C90 /* biceps.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = biceps.html; sourceTree = "<group>"; };
+		D391474C20EBF39700710C90 /* lats.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lats.html; sourceTree = "<group>"; };
+		D391474E20EBF40D00710C90 /* middleback.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = middleback.html; sourceTree = "<group>"; };
+		D391475020EBF4A000710C90 /* lowerback.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lowerback.html; sourceTree = "<group>"; };
+		D391475820EBF64300710C90 /* traps.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = traps.html; sourceTree = "<group>"; };
+		D391475A20EBF69900710C90 /* shoulders.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = shoulders.html; sourceTree = "<group>"; };
+		D391475C20EBF6E800710C90 /* core.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = core.html; sourceTree = "<group>"; };
+		D391476220EBFA4200710C90 /* CustomWorkoutsSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWorkoutsSetup.swift; sourceTree = "<group>"; };
+		D391476320EBFA4200710C90 /* SaveCustomWorkoutToToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCustomWorkoutToToday.swift; sourceTree = "<group>"; };
+		D3923A2420E02F7700EBB422 /* DefaultWorkoutsSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWorkoutsSetup.swift; sourceTree = "<group>"; };
+		D3923A2620E0452F00EBB422 /* BodyPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPart.swift; sourceTree = "<group>"; };
+		D39EA8BF20ED36D500ED229E /* quadriceps.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = quadriceps.html; sourceTree = "<group>"; };
+		D39EA8C020ED36D500ED229E /* glutes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = glutes.html; sourceTree = "<group>"; };
+		D39EA8C120ED36D500ED229E /* calves.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = calves.html; sourceTree = "<group>"; };
+		D39EA8C220ED36D500ED229E /* hamstrings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hamstrings.html; sourceTree = "<group>"; };
+		D39FEED120DC7B4700C73D46 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		D39FEED620DC835A00C73D46 /* TodayExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayExerciseTableViewController.swift; sourceTree = "<group>"; };
+		D39FEEDC20DD802400C73D46 /* AddWorkoutToToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutToToday.swift; sourceTree = "<group>"; };
+		D39FEEE220DDB6DD00C73D46 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
+		D39FEEE420DDB73A00C73D46 /* CalendarWorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWorkoutTableViewController.swift; sourceTree = "<group>"; };
+		D39FEEE820DDD6D900C73D46 /* CalendarWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWorkout.swift; sourceTree = "<group>"; };
+		D3A340C220F2F64D00BAAD48 /* coreYoga.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coreYoga.html; sourceTree = "<group>"; };
+		D3A340C520F2FB7D00BAAD48 /* seatedYoga.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = seatedYoga.html; sourceTree = "<group>"; };
+		D3B6342220D94E65007A3FA2 /* Vigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B6342520D94E65007A3FA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3B6342A20D94E65007A3FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3B6342F20D94E66007A3FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3B6343120D94E66007A3FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3BDEF4820EFCB470054068C /* CustomSelectedExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSelectedExercisesTableViewController.swift; sourceTree = "<group>"; };
+		D3BDEF4B20EFD3820054068C /* CustomSelectedExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSelectedExerciseTableViewController.swift; sourceTree = "<group>"; };
+		D3BDEF4D20EFE8030054068C /* TodayWorkoutsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWorkoutsTableViewController.swift; sourceTree = "<group>"; };
+		D3C95EBF20ED791800A58C0B /* plyometrics.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = plyometrics.html; sourceTree = "<group>"; };
+		D3C95EC520EDA26F00A58C0B /* stretches.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = stretches.html; sourceTree = "<group>"; };
+		D3C95ECB20EE772800A58C0B /* CustomSelectExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSelectExercisesTableViewController.swift; sourceTree = "<group>"; };
+		D3C95ECD20EE773600A58C0B /* CustomSelectExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSelectExerciseTableViewController.swift; sourceTree = "<group>"; };
+		D3C9B6A620EAC3F6008DE90D /* chest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = chest.html; sourceTree = "<group>"; };
+		D3CEE96420E474510022934B /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		D3CFE20620D9695A0056BA99 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		D3CFE20820D96C1F0056BA99 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		D3F5A90F20F00C23002CCB9D /* AddTodayWorkoutToCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodayWorkoutToCalendar.swift; sourceTree = "<group>"; };
+		D3F5A91120F02F1D002CCB9D /* armsDefaults.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = armsDefaults.html; sourceTree = "<group>"; };
+		D3F5A91420F04CC8002CCB9D /* coreDefaults.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coreDefaults.html; sourceTree = "<group>"; };
+		D3F5A91520F04CC8002CCB9D /* shouldersDefaults.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = shouldersDefaults.html; sourceTree = "<group>"; };
+		D3F5A91620F04CC8002CCB9D /* chestDefaults.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = chestDefaults.html; sourceTree = "<group>"; };
+		D3F5A91720F04CC8002CCB9D /* legsDefaults.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = legsDefaults.html; sourceTree = "<group>"; };
+		D3F5A91820F04CC8002CCB9D /* backDefaults.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = backDefaults.html; sourceTree = "<group>"; };
+		D3F5A92220F1A29E002CCB9D /* plyDefaults.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = plyDefaults.html; sourceTree = "<group>"; };
+		D3FA0E8520E2ABCB00AAE60D /* TodayHelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHelperFunctions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3B6341F20D94E65007A3FA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02F3EDE6E1877AE5F1F8074 /* Pods_Vigor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		361F902631D8D748559F6DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EE54DDF97AC40040B7C7BED /* Pods_Vigor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F52679428F31D7F71BB4698 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5937C13B8E2B5B580852921E /* Pods-Vigor.debug.xcconfig */,
+				D0D9FEF60A0A06763B43B398 /* Pods-Vigor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D30A363F20E6D3090035BA75 /* CustomControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D30A364520E6DB090035BA75 /* CustomWorkoutMakerTableViewController.swift */,
+				D3C95ECA20EE770400A58C0B /* SelectWorkoutControllers */,
+				D3BDEF4A20EFD3570054068C /* SelectedWorkoutControllers */,
+				D391476020EBFA3800710C90 /* CustomHelpers */,
+				D3C9B68320E82D29008DE90D /* CustomExerciseHTML */,
+			);
+			path = CustomControllers;
+			sourceTree = "<group>";
+		};
+		D3513C3320E328DC0060C26E /* BodyPartsHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D3923A2420E02F7700EBB422 /* DefaultWorkoutsSetup.swift */,
+				D3F5A91320F044E5002CCB9D /* DefaultWorkoutsHTML */,
+				D39FEEDC20DD802400C73D46 /* AddWorkoutToToday.swift */,
+				D3513C2D20E320660060C26E /* ExerciseDetailImageViewController.swift */,
+				D3513C1B20E2EA840060C26E /* ImageViewCell.swift */,
+			);
+			path = BodyPartsHelpers;
+			sourceTree = "<group>";
+		};
+		D381681820D98F1200A0656F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3923A2620E0452F00EBB422 /* BodyPart.swift */,
+				D3CFE20820D96C1F0056BA99 /* Workout.swift */,
+				D3CFE20620D9695A0056BA99 /* Exercise.swift */,
+				D39FEEE820DDD6D900C73D46 /* CalendarWorkout.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D38D87E720E2B4AB00A3FA69 /* BodyPartsTableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D381681D20D9CEFF00A0656F /* BodyPartsTableViewController.swift */,
+				D3513C2B20E31FD30060C26E /* BodyPartWorkoutsTableViewController.swift */,
+				D30A363F20E6D3090035BA75 /* CustomControllers */,
+				D3513C3120E322330060C26E /* BodyPartExercisesTableViewController.swift */,
+				D3513C2F20E321AB0060C26E /* BodyPartExerciseTableViewController.swift */,
+				D3513C3320E328DC0060C26E /* BodyPartsHelpers */,
+			);
+			path = BodyPartsTableViewControllers;
+			sourceTree = "<group>";
+		};
+		D391476020EBFA3800710C90 /* CustomHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D391476220EBFA4200710C90 /* CustomWorkoutsSetup.swift */,
+				D391476320EBFA4200710C90 /* SaveCustomWorkoutToToday.swift */,
+			);
+			path = CustomHelpers;
+			sourceTree = "<group>";
+		};
+		D39EA63D20EC04BC00ED229E /* arms */ = {
+			isa = PBXGroup;
+			children = (
+				D391474620EBF26000710C90 /* forearms.html */,
+				D391474820EBF2D500710C90 /* triceps.html */,
+				D391474A20EBF31200710C90 /* biceps.html */,
+			);
+			path = arms;
+			sourceTree = "<group>";
+		};
+		D39EA63E20EC04C500ED229E /* back */ = {
+			isa = PBXGroup;
+			children = (
+				D391474C20EBF39700710C90 /* lats.html */,
+				D391474E20EBF40D00710C90 /* middleback.html */,
+				D391475020EBF4A000710C90 /* lowerback.html */,
+				D391475820EBF64300710C90 /* traps.html */,
+			);
+			path = back;
+			sourceTree = "<group>";
+		};
+		D39EA8BE20ED36D500ED229E /* legs */ = {
+			isa = PBXGroup;
+			children = (
+				D39EA8BF20ED36D500ED229E /* quadriceps.html */,
+				D39EA8C120ED36D500ED229E /* calves.html */,
+				D39EA8C220ED36D500ED229E /* hamstrings.html */,
+				D39EA8C020ED36D500ED229E /* glutes.html */,
+			);
+			path = legs;
+			sourceTree = "<group>";
+		};
+		D39FEED320DC825100C73D46 /* TodayTableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3BDEF4D20EFE8030054068C /* TodayWorkoutsTableViewController.swift */,
+				D3743CF220DB411900415DB7 /* TodayExercisesTableViewController.swift */,
+				D39FEED620DC835A00C73D46 /* TodayExerciseTableViewController.swift */,
+				D3F5A90E20F00C0E002CCB9D /* TodayHelpers */,
+			);
+			path = TodayTableViewControllers;
+			sourceTree = "<group>";
+		};
+		D39FEEE120DDB6BF00C73D46 /* CalendarTableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D39FEEE220DDB6DD00C73D46 /* CalendarTableViewController.swift */,
+				D39FEEE420DDB73A00C73D46 /* CalendarWorkoutTableViewController.swift */,
+				D3CEE96420E474510022934B /* SettingsTableViewController.swift */,
+			);
+			path = CalendarTableViewControllers;
+			sourceTree = "<group>";
+		};
+		D3A340C420F2F66700BAAD48 /* DefaultYogaWorkouts */ = {
+			isa = PBXGroup;
+			children = (
+				D3A340C220F2F64D00BAAD48 /* coreYoga.html */,
+				D3A340C520F2FB7D00BAAD48 /* seatedYoga.html */,
+				D319291320F2FCF900A9DA07 /* standingYoga.html */,
+				D319291520F2FCFE00A9DA07 /* twistYoga.html */,
+			);
+			path = DefaultYogaWorkouts;
+			sourceTree = "<group>";
+		};
+		D3B6341920D94E65007A3FA2 = {
+			isa = PBXGroup;
+			children = (
+				D3B6342420D94E65007A3FA2 /* Vigor */,
+				D3B6342320D94E65007A3FA2 /* Products */,
+				7F52679428F31D7F71BB4698 /* Pods */,
+				361F902631D8D748559F6DB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3B6342320D94E65007A3FA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B6342220D94E65007A3FA2 /* Vigor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3B6342420D94E65007A3FA2 /* Vigor */ = {
+			isa = PBXGroup;
+			children = (
+				D3B6342920D94E65007A3FA2 /* Main.storyboard */,
+				D3B6342E20D94E66007A3FA2 /* LaunchScreen.storyboard */,
+				D3B6343120D94E66007A3FA2 /* Info.plist */,
+				D3743CF620DB487600415DB7 /* Images.xcassets */,
+				D3B6342520D94E65007A3FA2 /* AppDelegate.swift */,
+				D39FEED120DC7B4700C73D46 /* AppTabBarController.swift */,
+				D38D87E720E2B4AB00A3FA69 /* BodyPartsTableViewControllers */,
+				D39FEED320DC825100C73D46 /* TodayTableViewControllers */,
+				D39FEEE120DDB6BF00C73D46 /* CalendarTableViewControllers */,
+				D381681820D98F1200A0656F /* Classes */,
+			);
+			path = Vigor;
+			sourceTree = "<group>";
+		};
+		D3BDEF4A20EFD3570054068C /* SelectedWorkoutControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3BDEF4820EFCB470054068C /* CustomSelectedExercisesTableViewController.swift */,
+				D3BDEF4B20EFD3820054068C /* CustomSelectedExerciseTableViewController.swift */,
+			);
+			path = SelectedWorkoutControllers;
+			sourceTree = "<group>";
+		};
+		D3C95ECA20EE770400A58C0B /* SelectWorkoutControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3C95ECB20EE772800A58C0B /* CustomSelectExercisesTableViewController.swift */,
+				D3C95ECD20EE773600A58C0B /* CustomSelectExerciseTableViewController.swift */,
+			);
+			path = SelectWorkoutControllers;
+			sourceTree = "<group>";
+		};
+		D3C9B68320E82D29008DE90D /* CustomExerciseHTML */ = {
+			isa = PBXGroup;
+			children = (
+				D39EA63D20EC04BC00ED229E /* arms */,
+				D39EA63E20EC04C500ED229E /* back */,
+				D3C9B6A620EAC3F6008DE90D /* chest.html */,
+				D391475C20EBF6E800710C90 /* core.html */,
+				D39EA8BE20ED36D500ED229E /* legs */,
+				D3C95EBF20ED791800A58C0B /* plyometrics.html */,
+				D391475A20EBF69900710C90 /* shoulders.html */,
+			);
+			path = CustomExerciseHTML;
+			sourceTree = "<group>";
+		};
+		D3F5A90E20F00C0E002CCB9D /* TodayHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D3F5A90F20F00C23002CCB9D /* AddTodayWorkoutToCalendar.swift */,
+				D3FA0E8520E2ABCB00AAE60D /* TodayHelperFunctions.swift */,
+			);
+			path = TodayHelpers;
+			sourceTree = "<group>";
+		};
+		D3F5A91320F044E5002CCB9D /* DefaultWorkoutsHTML */ = {
+			isa = PBXGroup;
+			children = (
+				D3C95EC520EDA26F00A58C0B /* stretches.html */,
+				D3A340C420F2F66700BAAD48 /* DefaultYogaWorkouts */,
+				D3F5A91120F02F1D002CCB9D /* armsDefaults.html */,
+				D3F5A91820F04CC8002CCB9D /* backDefaults.html */,
+				D3F5A91620F04CC8002CCB9D /* chestDefaults.html */,
+				D3F5A91420F04CC8002CCB9D /* coreDefaults.html */,
+				D3F5A91720F04CC8002CCB9D /* legsDefaults.html */,
+				D3F5A92220F1A29E002CCB9D /* plyDefaults.html */,
+				D3F5A91520F04CC8002CCB9D /* shouldersDefaults.html */,
+			);
+			path = DefaultWorkoutsHTML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3B6342120D94E65007A3FA2 /* Vigor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B6343420D94E66007A3FA2 /* Build configuration list for PBXNativeTarget "Vigor" */;
+			buildPhases = (
+				D3789294CCDED0762B735315 /* [CP] Check Pods Manifest.lock */,
+				D3B6341E20D94E65007A3FA2 /* Sources */,
+				D3B6341F20D94E65007A3FA2 /* Frameworks */,
+				D3B6342020D94E65007A3FA2 /* Resources */,
+				F33CD6C0A7E7AE62855A5090 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vigor;
+			productName = Vigor;
+			productReference = D3B6342220D94E65007A3FA2 /* Vigor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3B6341A20D94E65007A3FA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Jason Shu";
+				TargetAttributes = {
+					D3B6342120D94E65007A3FA2 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = D3B6341D20D94E65007A3FA2 /* Build configuration list for PBXProject "Vigor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3B6341920D94E65007A3FA2;
+			productRefGroup = D3B6342320D94E65007A3FA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3B6342120D94E65007A3FA2 /* Vigor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3B6342020D94E65007A3FA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F5A91B20F04CC8002CCB9D /* chestDefaults.html in Resources */,
+				D39EA8C520ED36D500ED229E /* calves.html in Resources */,
+				D319291620F2FCFE00A9DA07 /* twistYoga.html in Resources */,
+				D39EA8C320ED36D500ED229E /* quadriceps.html in Resources */,
+				D3C95EC620EDA26F00A58C0B /* stretches.html in Resources */,
+				D3A340C620F2FB7D00BAAD48 /* seatedYoga.html in Resources */,
+				D39EA8C420ED36D500ED229E /* glutes.html in Resources */,
+				D391474D20EBF39700710C90 /* lats.html in Resources */,
+				D391475120EBF4A000710C90 /* lowerback.html in Resources */,
+				D3F5A91C20F04CC8002CCB9D /* legsDefaults.html in Resources */,
+				D39EA8C620ED36D500ED229E /* hamstrings.html in Resources */,
+				D3F5A91220F02F1E002CCB9D /* armsDefaults.html in Resources */,
+				D3F5A91D20F04CC8002CCB9D /* backDefaults.html in Resources */,
+				D3743CF720DB487600415DB7 /* Images.xcassets in Resources */,
+				D391474720EBF26000710C90 /* forearms.html in Resources */,
+				D3C95EC020ED791800A58C0B /* plyometrics.html in Resources */,
+				D319291420F2FCF900A9DA07 /* standingYoga.html in Resources */,
+				D3C9B6A720EAC3F6008DE90D /* chest.html in Resources */,
+				D391475D20EBF6E800710C90 /* core.html in Resources */,
+				D3F5A92320F1A29F002CCB9D /* plyDefaults.html in Resources */,
+				D391475920EBF64300710C90 /* traps.html in Resources */,
+				D3F5A91A20F04CC8002CCB9D /* shouldersDefaults.html in Resources */,
+				D391474F20EBF40E00710C90 /* middleback.html in Resources */,
+				D3F5A91920F04CC8002CCB9D /* coreDefaults.html in Resources */,
+				D3A340C320F2F64D00BAAD48 /* coreYoga.html in Resources */,
+				D391475B20EBF69900710C90 /* shoulders.html in Resources */,
+				D3B6343020D94E66007A3FA2 /* LaunchScreen.storyboard in Resources */,
+				D391474B20EBF31200710C90 /* biceps.html in Resources */,
+				D3B6342B20D94E65007A3FA2 /* Main.storyboard in Resources */,
+				D391474920EBF2D500710C90 /* triceps.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3789294CCDED0762B735315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vigor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F33CD6C0A7E7AE62855A5090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vigor/Pods-Vigor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vigor/Pods-Vigor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3B6341E20D94E65007A3FA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D381681E20D9CEFF00A0656F /* BodyPartsTableViewController.swift in Sources */,
+				D3BDEF4C20EFD3820054068C /* CustomSelectedExerciseTableViewController.swift in Sources */,
+				D3513C2E20E320660060C26E /* ExerciseDetailImageViewController.swift in Sources */,
+				D3513C2C20E31FD30060C26E /* BodyPartWorkoutsTableViewController.swift in Sources */,
+				D3923A2720E0452F00EBB422 /* BodyPart.swift in Sources */,
+				D3B6342620D94E65007A3FA2 /* AppDelegate.swift in Sources */,
+				D39FEEDD20DD802400C73D46 /* AddWorkoutToToday.swift in Sources */,
+				D3CEE96520E474510022934B /* SettingsTableViewController.swift in Sources */,
+				D3CFE20920D96C1F0056BA99 /* Workout.swift in Sources */,
+				D3F5A91020F00C23002CCB9D /* AddTodayWorkoutToCalendar.swift in Sources */,
+				D3743CF320DB411900415DB7 /* TodayExercisesTableViewController.swift in Sources */,
+				D3BDEF4E20EFE8030054068C /* TodayWorkoutsTableViewController.swift in Sources */,
+				D391476620EBFA4200710C90 /* SaveCustomWorkoutToToday.swift in Sources */,
+				D39FEEE520DDB73A00C73D46 /* CalendarWorkoutTableViewController.swift in Sources */,
+				D3FA0E8620E2ABCB00AAE60D /* TodayHelperFunctions.swift in Sources */,
+				D3C95ECC20EE772800A58C0B /* CustomSelectExercisesTableViewController.swift in Sources */,
+				D3513C3220E322330060C26E /* BodyPartExercisesTableViewController.swift in Sources */,
+				D39FEED220DC7B4700C73D46 /* AppTabBarController.swift in Sources */,
+				D3BDEF4920EFCB470054068C /* CustomSelectedExercisesTableViewController.swift in Sources */,
+				D30A364620E6DB090035BA75 /* CustomWorkoutMakerTableViewController.swift in Sources */,
+				D3513C3020E321AB0060C26E /* BodyPartExerciseTableViewController.swift in Sources */,
+				D39FEEE320DDB6DD00C73D46 /* CalendarTableViewController.swift in Sources */,
+				D3C95ECE20EE773600A58C0B /* CustomSelectExerciseTableViewController.swift in Sources */,
+				D39FEED720DC835A00C73D46 /* TodayExerciseTableViewController.swift in Sources */,
+				D391476520EBFA4200710C90 /* CustomWorkoutsSetup.swift in Sources */,
+				D3CFE20720D9695A0056BA99 /* Exercise.swift in Sources */,
+				D3513C1C20E2EA840060C26E /* ImageViewCell.swift in Sources */,
+				D39FEEE920DDD6D900C73D46 /* CalendarWorkout.swift in Sources */,
+				D3923A2520E02F7700EBB422 /* DefaultWorkoutsSetup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3B6342920D94E65007A3FA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3B6342A20D94E65007A3FA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3B6342E20D94E66007A3FA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3B6342F20D94E66007A3FA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3B6343220D94E66007A3FA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3B6343320D94E66007A3FA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3B6343520D94E66007A3FA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5937C13B8E2B5B580852921E /* Pods-Vigor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNFF5C7SBY;
+				INFOPLIST_FILE = Vigor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonshu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3B6343620D94E66007A3FA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D9FEF60A0A06763B43B398 /* Pods-Vigor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNFF5C7SBY;
+				INFOPLIST_FILE = Vigor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonshu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3B6341D20D94E65007A3FA2 /* Build configuration list for PBXProject "Vigor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B6343220D94E66007A3FA2 /* Debug */,
+				D3B6343320D94E66007A3FA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B6343420D94E66007A3FA2 /* Build configuration list for PBXNativeTarget "Vigor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B6343520D94E66007A3FA2 /* Debug */,
+				D3B6343620D94E66007A3FA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3B6341A20D94E65007A3FA2 /* Project object */;
+}
